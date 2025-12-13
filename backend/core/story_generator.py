@@ -62,8 +62,7 @@ class StoryGenerator:
             is_root=is_root,
             is_ending=node_data.isEnding if hasattr(
                 node_data, 'isEnding') else node_data['isEnding'],
-            is_winning_ending=node_data.isWinningEnding if hasattr(
-                node_data, 'isWinningEnding') else node_data['isWinningEnding'],
+            is_winning_ending=node_data.isWinningEnding if hasattr(node_data, "isWinningEnding") else node_data["isWinningEnding"],
             options=[]
         )
         db.add(node)
